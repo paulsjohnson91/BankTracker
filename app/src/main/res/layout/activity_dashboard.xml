@@ -6,33 +6,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="peej.com.banktracker.MainActivity">
-
+    tools:context="peej.com.banktracker.Dashboard">
 
     <FrameLayout
         android:id="@+id/content"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
+
         <ListView
-            android:id="@+id/list_banks"
+            android:id="@+id/list_dashboard"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
-
-        <android.support.design.widget.FloatingActionButton
-            android:id="@+id/floatingActionButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="end|bottom"
-            android:layout_margin="10dp"
-            android:clickable="true"
-            app:fabSize="normal"
-            app:srcCompat="@android:drawable/ic_input_add" />
     </FrameLayout>
 
     <android.support.design.widget.BottomNavigationView
-        android:id="@+id/navigation"
+        android:id="@+id/DashNavigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"

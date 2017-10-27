@@ -70,7 +70,7 @@
         android:layout_marginTop="30dp" />
 
     <Spinner
-        android:id="@+id/currencyTypeSpinner"
+        android:id="@+id/accountTypeSpinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -84,7 +84,7 @@
         android:layout_marginTop="30dp" />
 
     <Spinner
-        android:id="@+id/accountTypeSpinner"
+        android:id="@+id/currencyTypeSpinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"

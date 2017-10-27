@@ -8,15 +8,19 @@
     <string name="title_activity_main">Bank Tracker</string>
     <string name="title_activity_add_bank">New Account</string>
     <string name="account_name">Account Name</string>
+    <string name="current_account">Current Account</string>
+    <string name="savings_account">Savings Account</string>
+    <string name="credit_card">Credit Card</string>
     <string-array name="bankTypes">
-        <item>Current Account</item>
-        <item>Savings Account</item>
-        <item>Credit Card</item>
+        <item>@string/current_account</item>
+        <item>@string/savings_account</item>
+        <item>@string/credit_card</item>
     </string-array>
     <string-array name="currencyTypes">
         <item>GBP</item>
         <item>USD</item>
         <item>EUR</item>
     </string-array>
+    <string name="title_activity_dashboard">Dashboard</string>
 
 </resources>

@@ -1,6 +1,7 @@
 package peej.com.banktracker;
 
 import android.content.ContentValues;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -55,7 +56,7 @@ public class addBank extends AppCompatActivity {
                         values,
                         SQLiteDatabase.CONFLICT_REPLACE);
                 db.close();
-                readDB();
+                //readDB();
 
 
             }
@@ -96,10 +97,11 @@ public class addBank extends AppCompatActivity {
                 null,                                     // don't filter by row groups
                 null                                 // The sort order
         );
-        Log.d("DBCOUNT", "" + cursor.getCount());
         Toast.makeText(getApplicationContext(), "" + cursor.getCount(), Toast.LENGTH_SHORT).show();
         cursor.close();
         db.close();
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 
 }
